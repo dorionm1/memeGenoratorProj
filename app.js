@@ -1,16 +1,16 @@
-let submitBtn = document.getElementById("genMemeBtn");
-let undoBtn = document.getElementById("undoBtn");
-let form = document.getElementById("form")
-let pictureContainer = document.getElementById("memes")
+const submitBtn = document.getElementById("genMemeBtn");
+const undoBtn = document.getElementById("undoBtn");
+const form = document.getElementById("form")
+const pictureContainer = document.getElementById("memes")
 
 function createImgElement(){
-  let linkInput = document.getElementById("imgLink").value;
-  let newDivElem = document.createElement("div");
-  let newImgElem = document.createElement("img");
-  let newTopText = document.createElement("div");
-  let newBottomText = document.createElement("div")
-  let topTextInput = document.getElementById("topText").value;
-  let bottomTextInput = document.getElementById("bottomText").value;
+  const linkInput = document.getElementById("imgLink").value;
+  const newDivElem = document.createElement("div");
+  const newImgElem = document.createElement("img");
+  const newTopText = document.createElement("div");
+  const newBottomText = document.createElement("div")
+  const topTextInput = document.getElementById("topText").value;
+  const bottomTextInput = document.getElementById("bottomText").value;
 
   pictureContainer.appendChild(newDivElem)
   newDivElem.appendChild(newImgElem)
@@ -31,7 +31,7 @@ function clearInputs(){
 }
 
 function removeImgElement(){
-  let pictureContainer = document.getElementById("memes")
+  const pictureContainer = document.getElementById("memes")
    pictureContainer.removeChild(pictureContainer.lastElementChild)
 };
 
